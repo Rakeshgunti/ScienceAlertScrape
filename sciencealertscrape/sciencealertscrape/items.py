@@ -19,5 +19,6 @@ class TrendingLink(scrapy.Item):
     Category = scrapy.Field()
     Heading = scrapy.Field()
     Author = scrapy.Field()
+    PostedDate = scrapy.Field()
     Date = scrapy.Field()
     Content = scrapy.Field()
