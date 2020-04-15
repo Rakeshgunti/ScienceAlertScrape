@@ -44,7 +44,8 @@ class SATrendingspider(scrapy.Spider):
         item['Category'] = self.__extract_category(hxs)
         item['Heading'] = self.__extract_headline(hxs)
         item['Author'] = self.__extract_author(hxs)
-        item['Date'] = self.__extract_date(hxs)
+        item['PostedDate'] = self.__extract_date(hxs)
+        item['Date'] = datetime.now()
         item['Content'] = self.__extract_content(hxs)
         return item
     
