@@ -170,7 +170,7 @@ if __name__ == "__main__":
     sys.path.append(os.getcwd()+"\\..")
     from items import LatestLink, TrendingLink
     s = get_project_settings()
-    s.update(dict(LOG_ENABLED="True"))
+    s.update(dict(LOG_ENABLED="False"))
     configure_logging(s)
     runner = CrawlerRunner(s)
     crawl()
