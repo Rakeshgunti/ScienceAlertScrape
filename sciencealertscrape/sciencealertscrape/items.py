@@ -7,18 +7,18 @@
 
 import scrapy
 
-class LatestLink(scrapy.Item):
+class TrendingSchema(scrapy.Item):
+    Rankings = scrapy.Field()
     Category = scrapy.Field()
     Heading = scrapy.Field()
-    Author = scrapy.Field()
-    Date = scrapy.Field()
-    Content = scrapy.Field()
+    Link = scrapy.Field()
 
-class TrendingLink(scrapy.Item):
-    Rank = scrapy.Field()
+class ArticleSchema(scrapy.Item):
     Category = scrapy.Field()
     Heading = scrapy.Field()
-    Author = scrapy.Field()
+    Authors = scrapy.Field()
     PostedDate = scrapy.Field()
-    Date = scrapy.Field()
+    Images = scrapy.Field()
     Content = scrapy.Field()
+    RefLinks = scrapy.Field()
+    Link = scrapy.Field()

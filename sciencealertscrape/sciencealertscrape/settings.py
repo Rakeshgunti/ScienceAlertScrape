@@ -9,7 +9,7 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'sciencealertscrape'
+BOT_NAME = 'sciencealertscrape_rakesh'
 
 SPIDER_MODULES = ['sciencealertscrape.spiders']
 NEWSPIDER_MODULE = 'sciencealertscrape.spiders'
@@ -19,7 +19,7 @@ MONGO_URI = 'mongodb://localhost:27017'
 MONGO_DATABASE = 'ScienceAlerts'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'sciencealertscrape (+http://www.yourdomain.com)'
+USER_AGENT = 'sciencealertscrape (+http://www.sciencealertAPI.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -36,7 +36,7 @@ DOWNLOAD_DELAY = 5
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
