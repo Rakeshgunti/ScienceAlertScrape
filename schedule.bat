@@ -2,8 +2,9 @@
 SET arg1=%1
 cd %arg1%
 SET arg2=%2
+SET arg3=%3
 SET log_file=%cd%\logfile.txt
-call C:/ProgramData/Anaconda3/Scripts/activate.bat
+call %arg3%
 cd sciencealertscrape\sciencealertscrape\spiders
 %arg2% SAspider.py daily > %log_file%
 exit
