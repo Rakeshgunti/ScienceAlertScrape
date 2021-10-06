@@ -32,7 +32,7 @@ pytest==5.4.1
 pytest-runner==5.2
 pywin32==227
 queuelib==1.5.0
-Scrapy==1.6.0
+Scrapy==1.8.1
 service-identity==18.1.0
 six==1.14.0
 toml==0.10.2
